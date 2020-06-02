@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta text="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Paper, Scissors.</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap" rel="stylesheet"> 
+    
+</head>
+<body>
+    <div class="container">
+        <h1 class="main-title" id="gameStart">Rock, Paper, Scissors.<br>The Game.<br><p onclick="startGame()">CLICK HERE To Start The Game!</p></h1>
+<!-- /////////////////Rock, paper scissors images from: https://icon-icons.com//////////////////////////////////////////////////////////////// -->
+        <section class="optionsToChoose">
+            <div class="optionsToChoose-item">
+                <img class="optionsToChoose-item__img rock" id="rock" src="images/fist_hand_3268.png" data-option="rock" width="160px" height="160px"/>
+                <p class="optionsToChoose-item__text">Rock</p>
+            </div>
+            <div class="optionsToChoose-item">
+                <img class="optionsToChoose-item__img paper" id="paper" src="images/handcursor_mano_3527.png" data-option="paper" width="160px" height="160px"/>
+                <p class="optionsToChoose-item__text">Paper</p>
+            </div>
+            <div class="optionsToChoose-item">
+                <img class="optionsToChoose-item__img scissors" id="scissors" src="images/twofingers_hand_3266.png" data-option="scissors" width="160px" height="160px"/>
+                <p class="optionsToChoose-item__text">Scissors</p>
+            </div>
+        </section>
+        <section class="resultGame">
+            <div class="resultGame-item">
+                <p class="resultGame-item__title">You Choose:</p>
+                <img class="resultGame-item__img" id="imgOptionUser" src="images/name_user_3716.png" width="160px" height="160px"/>
+                <p class="resultGame-item__text" id="resultGame-User"></p>
+            </div>
+            <div class="resultGame-info">
+                <p class="resultGame-info__text" id="result"></p>
+            </div>
+            <div class="resultGame-item">
+                <p class="resultGame-item__title">The PC Choose:</p>
+                <img class="resultGame-item__img" id="imgOptionPc" src="images/server_3214.png" width="160px" height="160px"/>
+                <p class="resultGame-item__text" id="resultGame-Pc"></p>
+            </div>
+        </section>
+    </div>
+    <script src="javascript/resultGame.js"></script>
+</body>
+</html>
